@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
             cartItems.appendChild(cartItem);
         });
 
-        cartTotal.textContent = `$${total.toFixed(2)}`;
+        cartTotal.textContent = `N${total.toFixed(2)}`;
         cartBadge.textContent = itemCount;
 
         if (cart.length === 0) {
@@ -197,14 +197,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 <img src="${item.image}" alt="${item.name}">
                 <div class="cart-item-details">
                     <h3>${item.name}</h3>
-                    <p>$${item.price.toFixed(2)} x ${item.quantity}</p>
+                    <p>N${item.price.toFixed(2)} x ${item.quantity}</p>
                 </div>
                 <button class="remove-item" data-id="${item.id}">×</button>
             `;
             cartItems.appendChild(cartItem);
         });
 
-        cartTotal.textContent = `$${total.toFixed(2)}`;
+        cartTotal.textContent = `N${total.toFixed(2)}`;
         cartBadge.textContent = itemCount;
 
         if (cart.length === 0) {

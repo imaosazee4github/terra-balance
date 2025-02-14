@@ -1,4 +1,4 @@
-
+/* 
 li {
     display: inline;
   }
@@ -114,7 +114,7 @@ li {
    color: #4CAF50; /* or any color you prefer */
 }
 
-.btn-contact{
+/* .btn-contact{
 background-color: rgb(5, 63, 19);
 width: 300px;
 height: 40px;
@@ -124,9 +124,9 @@ color: white;
 cursor: pointer;
 border-radius: 30px;
 text-decoration: none;
-}
+} */
 
- .info-label{
+ /* .info-label{
    height: 60px;
    background-color: blue;
    text-align: center;
@@ -136,9 +136,9 @@ text-decoration: none;
    padding: 20px 10px 0px 0px;
    color: white;
 
- }
+ } */
 
- .biz-items{
+ /* .biz-items{
    display: flex;
    align-items: center;
    margin-bottom: 20px;
@@ -159,15 +159,217 @@ text-decoration: none;
 
  .btn-buy {
   background-color: #3b82f6;  /* bg-blue-500 */
-  color: white;
+  /* color: white;
   text-decoration: none;
   font-weight: bold;
   padding: 0.5rem 2rem;  /* py-2 px-8 */
-  border-radius: 9999px;  /* rounded-full */
-  font-size: 1.125rem;  /* text-lg */
-  transition: background-color 0.2s;  /* transition-colors duration-200 */
+  /* border-radius: 9999px;  /* rounded-full */
+  /* font-size: 1.125rem;  
+  transition: background-color 0.2s;  transition-colors duration-200 */
+/* }   */ */
+
+/* .btn-buy:hover {
+  background-color: #2563eb;  
+}  */
+
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.btn-buy:hover {
-  background-color: #2563eb;  
+/* Header styles */
+.header-container {
+  background-color: rgb(20, 108, 5);
+  padding: 1rem;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.logo-img {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logoImg {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.nav-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.nav-items li a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: rgb(17, 25, 5);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+/* Content styles */
+.content-text {
+  background-image: url("./assets/woman.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 2rem;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.aboutInfo {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.imgInfo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.biz-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.biz-items1 {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.animal-info {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Footer responsiveness */
+footer > div {
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Media Queries */
+/* Mobile devices */
+@media screen and (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-items {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-items li a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .content-text h1 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .content-text p {
+    font-size: 1rem;
+  }
+
+  .aboutInfo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .btn-contact {
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem auto;
+  }
+}
+
+/* Tablet devices */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .header-content {
+    padding: 0 1rem;
+  }
+
+  .nav-items {
+    gap: 0.25rem;
+  }
+
+  .nav-items li a {
+    padding: 0.5rem;
+  }
+
+  .biz-items1 {
+    flex: 0 1 calc(50% - 2rem);
+  }
+}
+
+/* Large screens */
+@media screen and (min-width: 1025px) {
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .nav-items {
+    gap: 1rem;
+  }
+
+  .biz-items1 {
+    flex: 0 1 calc(33.333% - 2rem);
+  }
+}
+
+/* Utility classes */
+.btn-contact {
+  display: inline-block;
+  background-color: rgb(5, 63, 19);
+  padding: 0.75rem 1.5rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn-contact:hover {
+  background-color: rgb(7, 83, 25);
 }
